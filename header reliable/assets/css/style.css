@@ -1,0 +1,266 @@
+*{margin: 0; padding: 0;}
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.container-top{
+    vertical-align: baseline;
+    background: transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    position: relative;
+    z-index: 2;
+    min-height: 1px
+}
+
+.emergency-call{
+    display: none;
+    position: absolute;
+    left: 50%;
+    border-radius: 50px;
+    top: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+    background-color: #ec2028;
+    max-height: 50px;
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    transition: background-color 300ms ease 0ms,background-image 300ms ease 0ms;
+}
+
+.container{
+    max-width: 1440px;
+    padding-right: 30px!important;
+    padding-left: 30px!important;
+}
+
+
+.arrow{
+    border: solid #24408f;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.top-nav{
+    background-image: linear-gradient(90deg,#fff 15%,#aaa 100%);
+    background-color: #ccc;
+    z-index: 10;
+    position: relative;
+}
+
+.top-nav-menu{
+    text-align: right;
+}
+
+.top-nav-menu li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-row{
+    display: flex;
+}
+
+.top-nav-menu li:last-child{
+    margin-right: 0;
+}
+
+
+.top-nav-menu li a{
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 300ms ease 0ms;
+    padding: 7px 0;
+    display: block;
+    
+}
+
+.top-nav-menu li a:hover {
+    color: #6c6ead;
+}
+
+.main-nav{
+    width: calc(100% - 250px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.main-nav ul li {
+    padding: 0;
+    margin: 0 3px;
+    top: 10px;
+    line-height: 1.7em;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+
+.main-nav ul li a{
+    font-size: 15px;
+    color: #24408f;
+    padding: 5px 20px;
+    margin: 0 3px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    font-weight: 500px;
+}
+
+
+.schedule-service-btn a{
+    color: #ffffff !important;
+    border-width: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: linear-gradient(180deg,#6568aa 0%,#272e75 100%);
+    background-color: #283b91;
+    transition: all 300ms ease 0ms;
+}
+
+.schedule-service-btn a:hover {
+    background-image: linear-gradient(180deg,#6568aa 0%,#272e75 50%);
+    background-color: #1c2470;
+}
+
+.dropdown-menu{
+    position: fixed;
+    top: 138px;
+    min-height: 200px;
+    border-top: 2px solid #ec2028;
+    border-radius: 0;
+    width: 100%;
+    display: none;
+    grid-template-columns: 60% 40%;
+    padding: 30px 50px;
+    max-width: 1440px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-size: 35%;
+    background-image: url(https://www.reliablecomfort.com/wp-content/uploads/2020/05/reliable-comfort-van.png);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-color: #fff;
+}
+
+.main-nav ul li:hover .dropdown-menu {
+    display: grid;
+}
+.main-nav ul li a.active,
+.main-nav ul li:hover a{
+    border-color: #d7d7d7;
+}
+.main-nav ul li .dropdown-menu h3{
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+    font-size: 30px!important;
+    font-weight: 500px;
+    margin: 0 0 15px;
+    display: inline-block;
+    color:#24408f;
+}
+.main-nav ul li .dropdown-menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    
+}
+.main-nav ul li .dropdown-menu ul li{
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li .dropdown-menu ul li a{
+    font-size: 15px;
+    color: #24408f;
+    text-decoration: none;
+    border:none;
+    padding: 0 0 15px;
+    font-weight: 500px;
+
+}
+
+.main-nav ul li .dropdown-menu ul li a:hover{
+    opacity: .5;
+}
+.menu-icon{
+    margin-left: 15px;
+}
+.menu-icon div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .mobile-view{
+    display: none;
+}
+@media(max-width:1200px){
+    .main-nav ul li a{
+        font-size: 12px;
+        padding: 5px 10px;
+        margin: 0 2px;
+    }
+}
+
+@media(max-width:980px){
+    .top-nav{
+        display: none;
+    }
+    .mobile-view{
+        display: inline-flex;
+    }
+    .mobile-view .schedule-service-btn a{
+        font-size: 15px;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    .mobile-menu{
+        width: calc(100% - 250px);
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    .main-nav{
+        display: none;
+    }
+}
+
